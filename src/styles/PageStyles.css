@@ -1,0 +1,250 @@
+/* Página de estilos para Home */
+.bg-image {
+  background-image: url('../assets/backround_image.jpg'); /* Asegúrate de tener la imagen en la carpeta assets */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.info-box {
+  background-color: rgba(149, 184, 246, 0.9); /* Color de fondo similar a la barra de navegación */
+  color: #ffffff;
+}
+
+.info-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-white {
+  color: #d3d3d3; /* Blanco grisáceo para el texto */
+}
+
+.text-black{
+  color: black;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-custom {
+  background-color: rgba(149, 184, 246, 0.9); /* Color de fondo similar al rectángulo de información */
+  color: #ffffff; /* Texto blanco para contraste */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 24px; /* Tamaño de fuente para el nombre de la app */
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff; /* Texto blanco para los enlaces */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff; /* Cambio de color al pasar el ratón */
+}
+
+.navbar-custom .nav-link.active {
+  font-weight: bold; /* Texto en negrita para el enlace activo */
+}
+
+/* Estilos para la página Rutines */
+.rutines-week {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+/* Estilos para la página Rutines */
+.rutines-box, .labels-box {
+  background-color: rgba(149, 184, 246, 0.9); /* Color de fondo similar al rectángulo de información */
+  color: #ffffff; /* Texto blanco para contraste */
+  padding: 20px; /* Añade un padding interno para separar contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  height: 95vh; /* Altura del 60% de la página */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  margin-left: 20px; /* Margen izquierdo para el rutines-box */
+}
+
+.rutines-box {
+  width: calc(100% - 25% - 40px); /* Ancho del 75% de la página menos los márgenes */
+}
+
+.labels-box {
+  width: 25%; /* Ancho del 25% de la página */
+  margin-left: 20px; /* Margen izquierdo para separar del rutines-box */
+}
+
+.rutines-box h2, .labels-box h2 {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  margin-bottom: 10px; /* Espacio inferior al título */
+  align-self: flex-start; /* Alinea el título al inicio del contenedor */
+  
+}
+
+.contenedor1 {
+  border-radius: 2%;
+  display: grid;
+  padding: 5px;
+  gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+  height: 80%;
+  width: auto;
+  background-color: #ffffff;
+}
+
+.day{
+  background-color: rgb(149, 149, 149);
+  color:black;
+  border-radius: 2%;
+}
+
+.textday{
+  text-align: center;
+}
+
+.contenedorRutinas{
+  align-items:center ;
+  align-content: center;
+  padding: 10vh;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+.addButton{
+  background-color: gray;
+  color: black;
+}
+
+.createAlarmButton{
+  background-color: gray;
+  color: black;
+}
+
+.contenedor{
+  background-color: white ;
+  width: 90%;
+  height: 90%;
+  border-radius: 2%;
+}
+
+.label{
+  background-color: #ffffff;
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  color:black
+}
+
+.row{
+  align-items: center;
+}
+
+.divCentrado{
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.info{
+  gap: 2px;
+  color:black;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/* Estilos para el contenedor del calendario e información */
+.calendar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Ajusta el ancho según tus necesidades */
+}
+
+/* Estilos para la caja del calendario */
+.calendar-box, .calendar-info-box {
+  background-color: rgba(149, 184, 246, 0.9); /* Color de fondo similar al utilizado en la barra de navegación */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  height: 60vh; /* Altura del 60% de la página */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido al principio */
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+/* Estilo específico para la caja del calendario */
+.calendar-box {
+  width: 70%; /* Ajusta el ancho según tus necesidades */
+  margin-right: 20px; /* Espacio entre el calendario y la caja de información */
+}
+
+/* Estilo específico para la caja de información */
+.calendar-info-box {
+  width: 30%; /* Ajusta el ancho según tus necesidades */
+}
+
+/* Estilos para los títulos */
+.calendar-box h2, .calendar-info-box h2 {
+  font-size: 24px; /* Tamaño de fuente para el título */
+  margin-bottom: 10px; /* Espacio inferior al título */
+  align-self: flex-start; /* Alinea el título al inicio del contenedor */
+}
+
+/* Estilos para los rectángulos internos */
+.inner-box {
+  background-color: #ffffff; /* Color de fondo blanco */
+  color: #000000; /* Color de texto negro */
+  width: 90%; /* Ancho del 90% del contenedor padre */
+  height: 80%; /* Altura del 80% del contenedor padre */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Padding interno */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+  margin: 10px auto; /* Centra el rectángulo horizontalmente y añade espacio alrededor */
+}
+
+.botonEliminar{
+  width: 50%;
+  height: 50%;
+}
+
+.grid{
+  display: grid;
+  padding: 2%;
+  gap: 2%;
+}
+
+.contenedorFood{
+  align-items:center ;
+  align-content: center;
+  padding: 10vh;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(218, 165, 32, 0.46);
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5%;
+  
+}
+
+.contenedorPrincipal{
+  padding: 10%;
+  display: grid;
+  align-items: center;
+}
